@@ -1,7 +1,7 @@
 <template>
   <section>
     <h3>
-      <b>Timeline</b>
+      <b class="title_timeline">Agenda de reservas</b>
     </h3>
     <div id="visualization" ref="vis">
       <div class="menu">
@@ -144,12 +144,15 @@ export default {
 };
 </script>
 
-<style>
-@import "./style.css";
-@import "./full-style.css";
-.arrow_right {
-  height: 166px;
-  width: 45px;
-  border: 1px solid black;
-}
+<style lang="sass" scoped>
+@import "./style.css"
+@import "./full-style.css"
+.arrow_right
+  height: 166px
+  width: 45px
+  border: 1px solid black
+
+.title_timeline
+  font-size: 24px
+  font-weight: 400
 </style>
